@@ -125,35 +125,25 @@ export default function Index() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Mahalaxmi Temple", desc: "Iconic hilltop temple with stunning views", image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?w=500&h=400&fit=crop" },
-              { name: "Panhala Fort", desc: "Historical fort with breathtaking landscape", image: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=500&h=400&fit=crop" },
-              { name: "Rankala Lake", desc: "Serene lake perfect for evening walks", image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=500&h=400&fit=crop" },
-              { name: "New Palace Museum", desc: "Royal heritage and artifacts", image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=500&h=400&fit=crop" },
-              { name: "Jyotiba Temple", desc: "Ancient temple with spiritual significance", image: "https://images.unsplash.com/photo-1545850308-da18df3a7e0f?w=500&h=400&fit=crop" },
-              { name: "Dajipur Wildlife Sanctuary", desc: "Nature and wildlife exploration", image: "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=500&h=400&fit=crop" },
+              { name: "Mahalaxmi Temple", desc: "Iconic hilltop temple with stunning views" },
+              { name: "Panhala Fort", desc: "Historical fort with breathtaking landscape" },
+              { name: "Rankala Lake", desc: "Serene lake perfect for evening walks" },
+              { name: "New Palace Museum", desc: "Royal heritage and artifacts" },
+              { name: "Jyotiba Temple", desc: "Ancient temple with spiritual significance" },
+              { name: "Dajipur Wildlife Sanctuary", desc: "Nature and wildlife exploration" },
             ].map((dest, idx) => (
               <div
                 key={idx}
-                className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer"
+                className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer p-6 bg-card"
               >
-                <div className="relative h-64 overflow-hidden bg-muted">
-                  <img
-                    src={dest.image}
-                    alt={dest.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
+                <div className="flex items-start gap-2 mb-2">
+                  <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <h3 className="text-lg font-bold text-foreground">{dest.name}</h3>
                 </div>
-                <div className="p-6 bg-card">
-                  <div className="flex items-start gap-2 mb-2">
-                    <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                    <h3 className="text-lg font-bold text-foreground">{dest.name}</h3>
-                  </div>
-                  <p className="text-muted-foreground text-sm mb-4">{dest.desc}</p>
-                  <button className="px-4 py-2 bg-primary text-white font-medium rounded-[12px] hover:bg-primary/90 transition text-sm">
-                    Explore
-                  </button>
-                </div>
+                <p className="text-muted-foreground text-sm mb-4">{dest.desc}</p>
+                <button className="px-4 py-2 bg-primary text-white font-medium rounded-[12px] hover:bg-primary/90 transition text-sm">
+                  Explore
+                </button>
               </div>
             ))}
           </div>
