@@ -74,7 +74,6 @@ export default function Index() {
                 <label className="block text-xs font-semibold text-foreground mb-2">Hotel Room</label>
                 <select className="w-full px-4 py-3 bg-white/80 border border-border rounded-[12px] text-sm focus:outline-none focus:ring-2 focus:ring-primary">
                   <option>Select hotel</option>
-                  <option>Hotel Sayaji</option>
                   <option>Darshan Hotel</option>
                 </select>
               </div>
@@ -201,18 +200,11 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {[
               {
-                name: "Hotel Sayaji",
+                name: "Darshan Hotel",
                 image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&h=500&fit=crop",
                 rating: 4.8,
-                amenities: ["Swimming Pool", "Restaurant", "Parking", "Free WiFi", "Breakfast"],
+                amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
                 price: "₹4,500/night",
-              },
-              {
-                name: "Darshan Hotel",
-                image: "https://images.unsplash.com/photo-1570129477492-45927003d148?w=800&h=500&fit=crop",
-                rating: 4.6,
-                amenities: ["Swimming Pool", "Restaurant", "Parking", "Free WiFi", "Breakfast"],
-                price: "₹3,800/night",
               },
             ].map((hotel, idx) => (
               <div
