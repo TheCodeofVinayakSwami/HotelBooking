@@ -158,12 +158,10 @@ export default function Index() {
             <p className="text-lg text-muted-foreground">Choose the perfect vehicle for your journey</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              { name: "Swift Dzire", seats: "4", ac: true, fuel: "Petrol", price: "₹12/km" },
-              { name: "Toyota Innova", seats: "7", ac: true, fuel: "Diesel", price: "₹15/km" },
-              { name: "Toyota Crysta", seats: "8", ac: true, fuel: "Diesel", price: "₹18/km" },
-              { name: "Tempo Traveller", seats: "13", ac: true, fuel: "Diesel", price: "₹22/km" },
+              { name: "Eritga", seats: "4", ac: true, fuel: "Petrol", price: "₹12/km" },
+              { name: "Kia Carens", seats: "7", ac: true, fuel: "Diesel", price: "₹15/km" },
               { name: "Mini Bus", seats: "17", ac: true, fuel: "Diesel", price: "₹25/km" },
             ].map((car, idx) => (
               <div
