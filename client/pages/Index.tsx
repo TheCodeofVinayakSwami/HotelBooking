@@ -220,7 +220,7 @@ export default function Index() {
                 price: "₹4,500/night",
               },
               {
-                name: "Hotel Pearl",
+                name: "Darshan Hotel",
                 image: "https://images.unsplash.com/photo-1570129477492-45927003d148?w=800&h=500&fit=crop",
                 rating: 4.6,
                 amenities: ["Swimming Pool", "Restaurant", "Parking", "Free WiFi", "Breakfast"],
