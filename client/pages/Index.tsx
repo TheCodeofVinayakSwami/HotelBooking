@@ -24,7 +24,7 @@ export default function Index() {
               Home
             </Link>
             <Link to="/dashboard" className="text-sm font-medium text-foreground hover:text-primary transition">
-              Dashboard
+              Admin
             </Link>
             <button className="px-4 py-2 bg-primary text-white rounded-[12px] hover:bg-primary/90 transition font-medium text-sm">
               Login

@@ -27,9 +27,11 @@ export default function Dashboard() {
               <h1 className="font-bold text-xl text-foreground">Travel Hub</h1>
             </div>
           </div>
-          <Link to="/" className="text-sm font-medium text-foreground hover:text-primary transition">
-            Home
-          </Link>
+          <div className="flex items-center gap-4">
+            <Link to="/" className="text-sm font-medium text-foreground hover:text-primary transition">
+              Home
+            </Link>
+          </div>
         </div>
       </nav>
 

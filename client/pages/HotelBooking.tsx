@@ -82,7 +82,7 @@ export default function HotelBooking() {
               Home
             </Link>
             <Link to="/dashboard" className="text-sm font-medium text-foreground hover:text-primary transition">
-              Dashboard
+              Admin
             </Link>
           </div>
         </div>
