@@ -59,9 +59,9 @@ export default function Index() {
               <button className="px-8 py-4 bg-primary text-white font-semibold rounded-[16px] hover:bg-primary/90 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg">
                 Book Cab
               </button>
-              <button className="px-8 py-4 bg-accent text-white font-semibold rounded-[16px] hover:bg-accent/90 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg">
+              <Link to="/hotel-booking" className="inline-block px-8 py-4 bg-accent text-white font-semibold rounded-[16px] hover:bg-accent/90 transition-all duration-300 hover:scale-105 active:scale-95 shadow-lg text-center">
                 Book Hotel
-              </button>
+              </Link>
             </div>
           </div>
         </div>
