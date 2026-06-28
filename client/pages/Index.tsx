@@ -71,12 +71,12 @@ export default function Index() {
           <div className="glass rounded-[20px] p-6 sm:p-8 shadow-2xl border border-white/20">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
               <div>
-                <label className="block text-xs font-semibold text-foreground mb-2">Pickup</label>
-                <input
-                  type="text"
-                  placeholder="Enter location"
-                  className="w-full px-4 py-3 bg-white/80 border border-border rounded-[12px] text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-                />
+                <label className="block text-xs font-semibold text-foreground mb-2">Hotel Room</label>
+                <select className="w-full px-4 py-3 bg-white/80 border border-border rounded-[12px] text-sm focus:outline-none focus:ring-2 focus:ring-primary">
+                  <option>Select hotel</option>
+                  <option>Hotel Sayaji</option>
+                  <option>Darshan Hotel</option>
+                </select>
               </div>
               <div>
                 <label className="block text-xs font-semibold text-foreground mb-2">Destination</label>
