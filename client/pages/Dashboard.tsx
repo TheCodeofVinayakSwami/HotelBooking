@@ -24,7 +24,7 @@ export default function Dashboard() {
               K
             </div>
             <div>
-              <h1 className="font-bold text-xl text-foreground">Kolhapur Travel Hub</h1>
+              <h1 className="font-bold text-xl text-foreground">Travel Hub</h1>
             </div>
           </div>
           <Link to="/" className="text-sm font-medium text-foreground hover:text-primary transition">

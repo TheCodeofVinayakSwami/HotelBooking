@@ -15,7 +15,7 @@ export default function Index() {
               K
             </div>
             <div>
-              <h1 className="font-bold text-xl text-foreground">Kolhapur Travel Hub</h1>
+              <h1 className="font-bold text-xl text-foreground">Travel Hub</h1>
               <p className="text-xs text-muted-foreground">Explore with Comfort</p>
             </div>
           </div>
@@ -402,9 +402,9 @@ export default function Index() {
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div>
-              <h3 className="font-bold text-lg mb-4">Kolhapur Travel Hub</h3>
-              <p className="text-white/70 text-sm">Your gateway to exploring the beauty of Kolhapur with comfort and convenience.</p>
-            </div>
+            <h3 className="font-bold text-lg mb-4">Travel Hub</h3>
+            <p className="text-white/70 text-sm">Your gateway to exploring the beauty of Kolhapur with comfort and convenience.</p>
+          </div>
             <div>
               <h4 className="font-semibold mb-4">Quick Links</h4>
               <ul className="space-y-2 text-sm">
@@ -433,7 +433,7 @@ export default function Index() {
           </div>
           <div className="border-t border-white/10 pt-8">
             <p className="text-center text-sm text-white/60">
-              © 2024 Kolhapur Travel Hub. All rights reserved.
+              © 2024 Travel Hub. All rights reserved.
             </p>
           </div>
         </div>
