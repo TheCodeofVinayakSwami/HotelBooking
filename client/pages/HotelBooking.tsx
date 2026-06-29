@@ -11,10 +11,10 @@ export default function HotelBooking() {
   const hotels = [
     {
       id: 1,
-      name: "Darshan Hotel",
+      name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.8,
-      image: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=400&h=300&fit=crop",
+      image: null,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹2,500", amenities: ["WiFi", "AC", "Parking"] },
@@ -24,7 +24,7 @@ export default function HotelBooking() {
     },
     {
       id: 2,
-      name: "Royal Palace Hotel",
+      name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.6,
       image: "https://images.unsplash.com/photo-1570129477492-45927003d148?w=400&h=300&fit=crop",
@@ -37,10 +37,10 @@ export default function HotelBooking() {
     },
     {
       id: 3,
-      name: "Heritage Inn",
+      name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.5,
-      image: "https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400&h=300&fit=crop",
+      image: null,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹1,800", amenities: ["WiFi", "AC", "Parking"] },
@@ -50,7 +50,7 @@ export default function HotelBooking() {
     },
     {
       id: 4,
-      name: "Lakeside Retreat",
+      name: "Hotel Darshan",
       location: "Rankala",
       rating: 4.7,
       image: "https://images.unsplash.com/photo-1545850308-da18df3a7e0f?w=400&h=300&fit=crop",
@@ -104,13 +104,15 @@ export default function HotelBooking() {
                   onClick={() => setSelectedHotel(hotel.id)}
                   className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-border hover:border-primary"
                 >
-                  <div className="relative h-48 overflow-hidden bg-muted">
-                    <img
-                      src={hotel.image}
-                      alt={hotel.name}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
-                  </div>
+                  {hotel.image && (
+                    <div className="relative h-48 overflow-hidden bg-muted">
+                      <img
+                        src={hotel.image}
+                        alt={hotel.name}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                  )}
                   <div className="p-4 bg-white">
                     <div className="flex items-start justify-between mb-2">
                       <div>
