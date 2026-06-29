@@ -8,13 +8,15 @@ export default function HotelBooking() {
   const [selectedRoom, setSelectedRoom] = useState<number | null>(null);
   const [guests, setGuests] = useState("2");
 
+  const hotelImage = "https://cdn.builder.io/api/v1/image/assets%2F5da6eca7dd6e4199bc30ad5929ebe0c5%2F1259c0d927864acca439a0006692a8df?format=webp&width=800&height=1200";
+
   const hotels = [
     {
       id: 1,
       name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.8,
-      image: null,
+      image: hotelImage,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹2,500", amenities: ["WiFi", "AC", "Parking"] },
@@ -27,7 +29,7 @@ export default function HotelBooking() {
       name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.6,
-      image: "https://images.unsplash.com/photo-1570129477492-45927003d148?w=400&h=300&fit=crop",
+      image: hotelImage,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹2,200", amenities: ["WiFi", "AC", "Parking"] },
@@ -40,7 +42,7 @@ export default function HotelBooking() {
       name: "Hotel Darshan",
       location: "Kolhapur",
       rating: 4.5,
-      image: null,
+      image: hotelImage,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹1,800", amenities: ["WiFi", "AC", "Parking"] },
@@ -53,7 +55,7 @@ export default function HotelBooking() {
       name: "Hotel Darshan",
       location: "Rankala",
       rating: 4.7,
-      image: "https://images.unsplash.com/photo-1545850308-da18df3a7e0f?w=400&h=300&fit=crop",
+      image: hotelImage,
       amenities: ["Restaurant", "Parking", "Free WiFi", "Breakfast"],
       rooms: [
         { id: 1, name: "Standard Room", capacity: "2 Guests", price: "₹2,300", amenities: ["WiFi", "AC", "Parking"] },
@@ -104,15 +106,13 @@ export default function HotelBooking() {
                   onClick={() => setSelectedHotel(hotel.id)}
                   className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer border border-border hover:border-primary"
                 >
-                  {hotel.image && (
-                    <div className="relative h-48 overflow-hidden bg-muted">
-                      <img
-                        src={hotel.image}
-                        alt={hotel.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                      />
-                    </div>
-                  )}
+                  <div className="relative h-48 overflow-hidden bg-muted">
+                    <img
+                      src={hotel.image}
+                      alt={hotel.name}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
                   <div className="p-4 bg-white">
                     <div className="flex items-start justify-between mb-2">
                       <div>
