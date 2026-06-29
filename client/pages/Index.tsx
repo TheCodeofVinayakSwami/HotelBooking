@@ -129,7 +129,7 @@ export default function Index() {
               { name: "Rankala Lake", desc: "Serene lake perfect for evening walks" },
               { name: "New Palace Museum", desc: "Royal heritage and artifacts" },
               { name: "Jyotiba Temple", desc: "Ancient temple with spiritual significance" },
-              { name: "Dajipur Wildlife Sanctuary", desc: "Nature and wildlife exploration" },
+              { name: "Admapur Temple", desc: "Nature and wildlife exploration" },
             ].map((dest, idx) => (
               <div
                 key={idx}
