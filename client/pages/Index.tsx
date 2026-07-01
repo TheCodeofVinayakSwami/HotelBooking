@@ -114,81 +114,6 @@ export default function Index() {
       {/* Spacer for floating widget */}
       <div className="h-40"></div>
 
-      {/* Popular Destinations */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Popular Destinations</h2>
-            <p className="text-lg text-muted-foreground">Explore the best attractions in Kolhapur</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              { name: "Mahalaxmi Temple", desc: "Iconic hilltop temple with stunning views" },
-              { name: "Panhala Fort", desc: "Historical fort with breathtaking landscape" },
-              { name: "Rankala Lake", desc: "Serene lake perfect for evening walks" },
-              { name: "New Palace Museum", desc: "Royal heritage and artifacts" },
-              { name: "Jyotiba Temple", desc: "Ancient temple with spiritual significance" },
-              { name: "Admapur Temple", desc: "Nature and wildlife exploration" },
-            ].map((dest, idx) => (
-              <div
-                key={idx}
-                className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer p-6 bg-card"
-              >
-                <div className="flex items-start gap-2 mb-2">
-                  <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
-                  <h3 className="text-lg font-bold text-foreground">{dest.name}</h3>
-                </div>
-                <p className="text-muted-foreground text-sm mb-4">{dest.desc}</p>
-                <button className="px-4 py-2 bg-primary text-white font-medium rounded-[12px] hover:bg-primary/90 transition text-sm">
-                  Explore
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Our Cars */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Our Fleet</h2>
-            <p className="text-lg text-muted-foreground">Choose the perfect vehicle for your journey</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              { name: "Eritga", seats: "4", ac: true, fuel: "Petrol", price: "₹12/km" },
-              { name: "Kia Carens", seats: "7", ac: true, fuel: "Diesel", price: "₹15/km" },
-              { name: "Mini Bus", seats: "17", ac: true, fuel: "Diesel", price: "₹25/km" },
-            ].map((car, idx) => (
-              <div
-                key={idx}
-                className="group bg-white rounded-[16px] p-6 soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-border"
-              >
-                <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-[12px] mb-4 flex items-center justify-center">
-                  <Car className="w-20 h-20 text-primary opacity-30" />
-                </div>
-                <h3 className="font-bold text-lg text-foreground mb-3">{car.name}</h3>
-                <div className="space-y-2 mb-4 text-sm text-muted-foreground">
-                  <p className="flex items-center gap-2">
-                    <Users className="w-4 h-4" /> {car.seats} Seats
-                  </p>
-                  <p className="flex items-center gap-2">
-                    <Zap className="w-4 h-4" /> {car.fuel}
-                  </p>
-                  <p className="font-semibold text-foreground text-base">{car.price}</p>
-                </div>
-                <button className="w-full px-4 py-2 bg-primary text-white font-semibold rounded-[12px] hover:bg-primary/90 transition text-sm">
-                  Book Now
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Featured Hotels */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
         <div className="max-w-7xl mx-auto">
@@ -249,6 +174,81 @@ export default function Index() {
                     Book Now
                   </button>
                 </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our Cars */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Our Fleet</h2>
+            <p className="text-lg text-muted-foreground">Choose the perfect vehicle for your journey</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { name: "Eritga", seats: "4", ac: true, fuel: "Petrol", price: "₹12/km" },
+              { name: "Kia Carens", seats: "7", ac: true, fuel: "Diesel", price: "₹15/km" },
+              { name: "Mini Bus", seats: "17", ac: true, fuel: "Diesel", price: "₹25/km" },
+            ].map((car, idx) => (
+              <div
+                key={idx}
+                className="group bg-white rounded-[16px] p-6 soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-border"
+              >
+                <div className="h-48 bg-gradient-to-br from-primary/10 to-accent/10 rounded-[12px] mb-4 flex items-center justify-center">
+                  <Car className="w-20 h-20 text-primary opacity-30" />
+                </div>
+                <h3 className="font-bold text-lg text-foreground mb-3">{car.name}</h3>
+                <div className="space-y-2 mb-4 text-sm text-muted-foreground">
+                  <p className="flex items-center gap-2">
+                    <Users className="w-4 h-4" /> {car.seats} Seats
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Zap className="w-4 h-4" /> {car.fuel}
+                  </p>
+                  <p className="font-semibold text-foreground text-base">{car.price}</p>
+                </div>
+                <button className="w-full px-4 py-2 bg-primary text-white font-semibold rounded-[12px] hover:bg-primary/90 transition text-sm">
+                  Book Now
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Popular Destinations */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Popular Destinations</h2>
+            <p className="text-lg text-muted-foreground">Explore the best attractions in Kolhapur</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              { name: "Mahalaxmi Temple", desc: "Iconic hilltop temple with stunning views" },
+              { name: "Panhala Fort", desc: "Historical fort with breathtaking landscape" },
+              { name: "Rankala Lake", desc: "Serene lake perfect for evening walks" },
+              { name: "New Palace Museum", desc: "Royal heritage and artifacts" },
+              { name: "Jyotiba Temple", desc: "Ancient temple with spiritual significance" },
+              { name: "Admapur Temple", desc: "Nature and wildlife exploration" },
+            ].map((dest, idx) => (
+              <div
+                key={idx}
+                className="group rounded-[16px] overflow-hidden soft-shadow hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 cursor-pointer p-6 bg-card"
+              >
+                <div className="flex items-start gap-2 mb-2">
+                  <MapPin className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" />
+                  <h3 className="text-lg font-bold text-foreground">{dest.name}</h3>
+                </div>
+                <p className="text-muted-foreground text-sm mb-4">{dest.desc}</p>
+                <button className="px-4 py-2 bg-primary text-white font-medium rounded-[12px] hover:bg-primary/90 transition text-sm">
+                  Explore
+                </button>
               </div>
             ))}
           </div>
