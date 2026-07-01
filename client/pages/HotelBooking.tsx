@@ -77,7 +77,7 @@ export default function HotelBooking() {
             <div className="w-10 h-10 bg-primary rounded-[12px] flex items-center justify-center text-white font-bold text-lg">
               K
             </div>
-            <h1 className="font-bold text-xl text-foreground">Travel Hub</h1>
+            <h1 className="font-bold text-xl text-foreground">ABC</h1>
           </Link>
           <div className="flex items-center gap-4">
             <Link to="/" className="text-sm font-medium text-foreground hover:text-primary transition">
@@ -357,14 +357,14 @@ export default function HotelBooking() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-white/70">
-                <li>📞 +91 9876 543 210</li>
-                <li>✉️ info@travelhub.com</li>
+                <li>📞 +91 1234567890</li>
+                <li>✉️ ABC.com</li>
               </ul>
             </div>
           </div>
           <div className="border-t border-white/10 pt-8">
             <p className="text-center text-sm text-white/60">
-              © 2024 Travel Hub. All rights reserved.
+              © 2026 ABC. All rights reserved.
             </p>
           </div>
         </div>

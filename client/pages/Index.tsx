@@ -15,7 +15,7 @@ export default function Index() {
               K
             </div>
             <div>
-              <h1 className="font-bold text-xl text-foreground">Travel Hub</h1>
+              <h1 className="font-bold text-xl text-foreground">ABC</h1>
               <p className="text-xs text-muted-foreground">Explore with Comfort</p>
             </div>
           </div>
@@ -66,7 +66,7 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Floating Booking Widget */}
+        {/* Floating Booking Widget
         <div className="absolute -bottom-32 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 z-20">
           <div className="glass rounded-[20px] p-6 sm:p-8 shadow-2xl border border-white/20">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
@@ -108,7 +108,7 @@ export default function Index() {
               </div>
             </div>
           </div>
-        </div>
+        </div>  */}
       </section>
 
       {/* Spacer for floating widget */}
@@ -184,7 +184,7 @@ export default function Index() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4">Our Fleet</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-4"> CARS </h2>
             <p className="text-lg text-muted-foreground">Choose the perfect vehicle for your journey</p>
           </div>
 
@@ -266,7 +266,7 @@ export default function Index() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
             {[
               { title: "Temple Tour", price: "₹999", duration: "8 Hours" },
-              { title: "Heritage Tour", price: "₹1,499", duration: "10 Hours" },
+              { title: "Kolhapur Darshan", price: "₹1,499", duration: "10 Hours" },
               { title: "Weekend Tour", price: "₹4,999", duration: "2 Days" },
               { title: "Panhala Adventure", price: "₹1,299", duration: "6 Hours" },
               { title: "Nature Tour", price: "₹1,699", duration: "8 Hours" },
@@ -347,9 +347,9 @@ export default function Index() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
-              { name: "Priya Sharma", city: "Pune", rating: 5, text: "Amazing service! Booked a cab and the driver was professional and courteous." },
-              { name: "Rajesh Kumar", city: "Mumbai", rating: 5, text: "Hotel Pearl exceeded my expectations. Great location and excellent amenities." },
-              { name: "Anjali Deshmukh", city: "Kolhapur", rating: 4.8, text: "The tour package was well-organized and affordable. Highly recommended!" },
+              { name: "ABC", city: "Pune", rating: 5, text: "Amazing service! Booked a cab and the driver was professional and courteous." },
+              { name: "ABC", city: "Mumbai", rating: 5, text: "Hotel Pearl exceeded my expectations. Great location and excellent amenities." },
+              { name: "ABC", city: "Kolhapur", rating: 4.8, text: "The tour package was well-organized and affordable. Highly recommended!" },
             ].map((review, idx) => (
               <div key={idx} className="bg-white rounded-[16px] p-8 soft-shadow border border-border">
                 <div className="flex items-center gap-1 mb-4">
@@ -407,8 +407,8 @@ export default function Index() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm text-white/70">
-                <li>📞 +91 9876 543 210</li>
-                <li>✉️ info@kolhapurtravelhub.com</li>
+                <li>📞 +91 1234567890</li>
+                <li>✉️ ABC.com</li>
                 <li>📍 Kolhapur, Maharashtra</li>
               </ul>
             </div>
@@ -423,7 +423,7 @@ export default function Index() {
           </div>
           <div className="border-t border-white/10 pt-8">
             <p className="text-center text-sm text-white/60">
-              © 2024 Travel Hub. All rights reserved.
+              © 2026 ABC. All rights reserved.
             </p>
           </div>
         </div>
